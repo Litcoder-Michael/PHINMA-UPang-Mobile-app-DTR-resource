@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:elevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/text_date"
+            android:text="01/01/21"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/text_timein"
+            android:layout_toRightOf="@+id/text_date"
+            android:layout_marginLeft="0dp"
+            android:text="7:30AM"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/text_timeout"
+            android:layout_toRightOf="@+id/text_timein"
+            android:layout_marginLeft="0dp"
+            android:text="11:30"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/text_totalhrs"
+            android:layout_toRightOf="@+id/text_timeout"
+            android:layout_marginLeft="0dp"
+            android:text="3Hrs:30mins"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

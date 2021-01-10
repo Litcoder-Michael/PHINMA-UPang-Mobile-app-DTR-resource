@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">CapstoneProjectFinal</string>
+
+    //Navigation
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+
+    //Log In Titles
+
+    <string name="upang_qoute"><b><i>Our Heritage,</i></b></string>
+    <string name="upang_qout21"><b><i>Our Future</i></b></string>
+
+    <string name="title_email">Email Address</string>
+    <string name="hint_email_login">example@gmail.com</string>
+    <string name="title_password">Password</string>
+    <string name="create_acc">Create an Account?</string>
+    <string name="title_login">Log In</string>
+
+    //Sign up hint
+    <string name="title_SIGN_UP">Sign Up</string>
+    <string name="hint_email_signup">Email</string>
+    <string name="hint_studentid_signup">Student ID</string>
+    <string name="hint_fullname">Full Name</string>
+    <string name="hint_Year">Year</string>
+    <string name="hint_course">Course</string>
+    <string name="hint_scholarship">Scholarship</string>
+    <string name="hint_department">Department</string>
+    <string name="hint_contact">Contact Number</string>
+    <string name="hint_password">Password</string>
+    <string name="title_alreadyAcc">Already Have an Account?</string>
+    <string name="title_signin">Sign In</string>
+
+    //Courses
+    <string-array name="Courses">
+        <item>BS-Architecture</item>
+        <item>BS-Accountancy</item>
+        <item>BSBA-Financial Management</item>
+        <item>BSBA-Hotel Manangement</item>
+        <item>BSBA-Marketing Management</item>
+        <item>BSBA-Restaurant Management</item>
+        <item>BS-Civil Engineering</item>
+        <item>BS-Arts and Communication</item>
+        <item>BS-Computer Engineering</item>
+        <item>BS-ComComputer Science</item>
+        <item>BS-Criminology</item>
+        <item>BS-Electical Engineering</item>
+        <item>BS-Electronics and Communication Engineering</item>
+        <item>BS-Elementary Education</item>
+        <item>BS-Secondary Education</item>
+        <item>BS-Hotel Management</item>
+        <item>BS-Information Technology</item>
+        <item>BS-Management Accounting</item>
+        <item>BS-Mechanical Engineering</item>
+        <item>BS-Medical Laboratory Science</item>
+        <item>BS-Nursing</item>
+        <item>BS-Pharmacy</item>
+        <item>BS-Physical Theraphy</item>
+        <item>BS-Political Science</item>
+        <item>BS-Tourism Management</item>
+    </string-array>
+
+    //Array for Semester
+    <string-array name="Semester">
+        <item>1st Sem</item>
+        <item>2nd Sem</item>
+    </string-array>
+
+    //Array for Month
+    <string-array name="FirstSemMonth">
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+    </string-array>
+
+    <string-array name="SecondSemMonth">
+        <item>November</item>
+        <item>December</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+    </string-array>
+    //String Year Level
+    <string-array name="Year_Level">
+        <item>1st YEAR</item>
+        <item>2nd YEAR</item>
+        <item>3rd YEAR</item>
+        <item>4th YEAR</item>
+        <item>5th YEAR</item>
+    </string-array>
+
+
+    //sign up List Scholarship
+    <string-array name="Scholarship">
+        <item>Student Assistant Program</item>
+        <item>Handog Kaibigan Program</item>
+    </string-array>
+    //sign up List Department
+    <string-array name="Department">
+        <item>REGISTRAR</item>
+        <item>CSDL</item>
+        <item>FINANCE</item>
+        <item>MARKETING</item>
+        <item>ITS</item>
+        <item>GSD</item>
+        <item>BASIC ED</item>
+        <item>CITE Department</item>
+        <item>CEA Department</item>
+        <item>CSS Department</item>
+        <item>CMA Department</item>
+        <item>CAS Department</item>
+        <item>COO Department</item>
+        <item>CHS Department</item>
+    </string-array>
+
+    //Text About Overview
+    <string name="title_overview"><b>Overview</b></string>
+    <string name="overview_about">UPang e-Tracker is an application that converts the traditional way (paper base) of recording
+        data to a digital format. It was design for the students of PHINMA University of Pangasinan
+        Scholars which aims to the following: provide efficiency, as the use of paper was already
+        forbidden, ease of use exemplified as misplacement due to tons of paper works or at worst
+        missing, tracking their day to day activity, more helpful way to earn their scholarship
+        renewal and most importantly, data\'s are always on the go, they can access it anytime and any-
+        where to check their progress and fulfill their shortcomings.
+    </string>
+</resources>

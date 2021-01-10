@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:background="@drawable/blurbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/banner_upang"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_upang_front"
+            android:layout_toRightOf="@id/banner"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/title_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="5dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_email_signup"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/tv_studentNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_studentid_signup"
+            android:inputType="textShortMessage"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/tv_FullName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_fullname"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_Year"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_scholar"
+            android:drawableRight="@drawable/ic_dropdown"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_Year"
+            android:inputType="textAutoComplete"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_course"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/tv_Year"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_scholar"
+            android:drawableRight="@drawable/ic_dropdown"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_course"
+            android:inputType="textAutoComplete"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/tv_ContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_contact"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_contact"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/tv_Password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/container_edittext"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="#BEFFFFFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@color/color_button"
+            android:text="@string/title_signin"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <!--        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_alreadyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/title_alreadyAcc"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/tv_alreadyAccount"
+                android:text="@string/title_signin"
+                android:textColor="@color/green_content"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>-->
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

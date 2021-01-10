@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSystem"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="195dp"
+        android:background="@drawable/new1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/borderProfile"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+             android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/container_image">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userProfileHome"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/upang_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/borderProfile"
+            android:text="Juan dela cruz"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_fullname"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/borderProfile"
+            android:text="BSIT"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/main_scholarship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_course"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/borderProfile"
+            android:text="Scholarship"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/main_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_scholarship"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/borderProfile"
+            android:text="Depratment"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/assign_faculty"
+            android:text="Faculty"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/main_department"
+            android:layout_toRightOf="@id/borderProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/separator"
+            android:text="|"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/main_department"
+            android:layout_toRightOf="@id/assign_faculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/schedule"
+            android:text="Schedule"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/main_department"
+            android:layout_toRightOf="@id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CustomCardCorners"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/semSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-3dp" />
+
+                <Spinner
+                    android:id="@+id/monthsSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_alignRight="@id/semSpinner"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginRight="-153dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:text="Daily Time Record"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/monthsSpinner"
+                    android:layout_marginLeft="30dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/monthsSpinner"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/title_date"
+                    android:text="Time In"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/monthsSpinner"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/timein"
+                    android:text="Time Out"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/SinceYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/monthsSpinner"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/timeout"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SinceYear"
+                    android:layout_marginTop="8dp" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

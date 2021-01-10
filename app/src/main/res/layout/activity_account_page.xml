@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountPage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout_cover"
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/upang1"
+                android:scaleType="fitStart"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/borderImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="false"
+                android:layout_marginTop="120dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/container_image"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/sampleuser" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera_gray"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="230dp"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_cover">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/title_acc_Fullname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edit_acc_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_Fullname"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <TextView
+                        android:id="@+id/title_acc_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_fullname"
+                        android:layout_marginTop="3dp"
+                        android:text="Email Address"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_acc_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_email"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <TextView
+                        android:id="@+id/title_acc_studentID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_email"
+                        android:layout_marginTop="3dp"
+                        android:text="Student ID"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_acc_studentID"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_studentID"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <TextView
+                        android:id="@+id/title_acc_Year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_studentID"
+                        android:layout_marginTop="3dp"
+                        android:text="Year Level"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_acc_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_Year"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <TextView
+                        android:id="@+id/title_acc_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_year"
+                        android:layout_marginTop="3dp"
+                        android:text="Course"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_acc_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_course"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <TextView
+                        android:id="@+id/title_acc_Contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_course"
+                        android:layout_marginTop="3dp"
+                        android:text="Contact Number"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_acc_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_Contact"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <TextView
+                        android:id="@+id/title_acc_Password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_contact"
+                        android:layout_marginTop="3dp"
+                        android:text="Password"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_acc_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/title_acc_Password"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/container_edittext_white" />
+
+                    <Button
+                        android:id="@+id/button_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_acc_password"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FF9800"
+                        android:text="Save"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarLayout"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
+            app:contentScrim="@color/colorWhite"
+            app:title="@string/app_name">
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="0dp">
+
+            </ViewFlipper>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overview_about"
+                android:textSize="20dp"
+                android:lineSpacingExtra="8dp"
+                android:padding="16dp"/>
+        </androidx.core.widget.NestedScrollView>
+
+    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+
+
+<!--    <LinearLayout
+        android:id="@+id/borderProfile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/container_image"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/sampleuser" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/borderProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/signOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="logOut"
+        android:text="Sign Out"
+        android:textColor="#4CAF50"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/borderProfile"
+        app:layout_constraintTop_toBottomOf="@+id/view_flipper"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_flipper"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="324dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_acc_Fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_acc_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_Fullname"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <TextView
+                android:id="@+id/title_acc_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_fullname"
+                android:layout_marginTop="3dp"
+                android:text="Email Address"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_acc_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_email"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <TextView
+                android:id="@+id/title_acc_studentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_email"
+                android:layout_marginTop="3dp"
+                android:text="Student ID"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_acc_studentID"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_studentID"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <TextView
+                android:id="@+id/title_acc_Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_studentID"
+                android:layout_marginTop="3dp"
+                android:text="Year Level"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_acc_year"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_Year"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <TextView
+                android:id="@+id/title_acc_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_year"
+                android:layout_marginTop="3dp"
+                android:text="Course"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_acc_course"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_course"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <TextView
+                android:id="@+id/title_acc_Contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_course"
+                android:layout_marginTop="3dp"
+                android:text="Contact Number"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_acc_contact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_Contact"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <TextView
+                android:id="@+id/title_acc_Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_contact"
+                android:layout_marginTop="3dp"
+                android:text="Password"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_acc_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title_acc_Password"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_edittext_white" />
+
+            <Button
+                android:id="@+id/button_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_acc_password"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#FF9800"
+                android:text="Save" />
+
+
+        </RelativeLayout>
+    </ScrollView>-->
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
